@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 :root {
     /* primary colors */
     --main-bg-color: hsl(233, 47%, 7%);
-    --color1: hsl(244, 38%, 16%);
-    --color2: hsl(277, 64%, 61%);
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
 
     /* neutral colors */
-    --white: hsl(0, 0%, 100%) --p--main-text:hsla(0, 0%, 100%, 0.75);
-    --color3: hsla(0, 0%, 100%, 0.6);
+    --white: hsl(0, 0%, 100%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --gray-blue: hsl(229, 6%, 66%);
+    --light-grey: hsl(0, 0%, 98%);
 }
 
 *,
@@ -23,13 +29,12 @@ body {
 }
 
 body {
+    font-size: 15px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: thistle;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    background-color: #F2F2F2;
+    color: var(--gray-blue);
+    font-family: 'Poppins', sans-serif;
 }
 
 img,
@@ -56,19 +61,95 @@ h6 {
     overflow-wrap: break-word;
 }
 
+h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--dark-blue);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+h3 {
+    color: var(--dark-blue); 
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+
 .wrapper {
+    margin: 0 auto;
     max-width: 1100px;
-    border: 1px solid blue;
+    /* border: 3px solid blue; */
+    background-color: var(--light-grey);
+    padding: 4rem 1.5rem; 
 }
 
 .header {
-    border: 1px solid red;
+    /* padding: 5rem 0rem; */
+    text-align: center;
 }
 
-.cards {
+.header p {
+    margin-top: 1rem;
+}
 
+.cards{
+    margin-top: 4rem;
 }
 
 .card {
-    border: 1px dotted grey;
+    position: relative;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    min-height: 222px;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.card img {
+    width: 4rem;
+    height: 4rem;
+    align
+}
+
+.card-1 {
+    border-top: 4px solid var(--cyan);
+}
+
+.card-2 {
+    border-top: 4px solid var(--red);
+}
+
+.card-3 {
+    border-top: 4px solid var(--orange);
+}
+
+.card-4 {
+    border-top: 4px solid var(--blue);
+}
+
+@media (min-width:650px) {
+
+    .wrapper {
+        background-color:pink;
+    }
+   
 }
