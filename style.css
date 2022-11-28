@@ -92,8 +92,12 @@ h3 {
 
 .header {
     /* padding: 5rem 0rem; */
+    max-width: 460px;
     text-align: center;
+    margin: 0 auto;
+    border: 1px solid blue;
 }
+
 
 .header p {
     margin-top: 1rem;
@@ -105,7 +109,7 @@ h3 {
 
 .card {
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     max-width: 500px;
     min-height: 222px;
     padding: 1.5rem;
@@ -127,7 +131,7 @@ h3 {
 .card img {
     width: 4rem;
     height: 4rem;
-    align
+    
 }
 
 .card-1 {
@@ -146,10 +150,48 @@ h3 {
     border-top: 4px solid var(--blue);
 }
 
-@media (min-width:650px) {
-
-    .wrapper {
-        background-color:pink;
+@media (min-width:600px) {
+  
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-   
+
+    .card {
+       flex-basis: 45%;
+    }
+
+    .card-1 {
+        margin-right: 2rem;
+    }
+
+    .card-4 {
+        margin-left: 2rem;
+    }
+ 
+}
+
+@media (min-width:900px) {
+  
+
+    .card {
+       flex-basis: 30%;
+    }
+
+    .card-1 {
+        margin-right: 2rem;
+        
+    }
+
+    .card-3 {
+        margin-left: 2rem;
+    }
+
+    .card-4 {
+        margin-left: 0rem;
+    }
+ 
+    
 }
