@@ -6,7 +6,7 @@
 
 ### Screenshot
 
-![solution](https://)
+![solution](https://github.com/patrick-selin/four-card-feature-section/blob/main/images/Four%20card%20feature%20section%20solution.png)
 
 
 ### Links
